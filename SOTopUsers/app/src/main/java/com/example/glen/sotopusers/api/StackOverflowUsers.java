@@ -10,6 +10,6 @@ import retrofit2.http.GET;
  */
 public interface StackOverflowUsers {
 
-    @GET("users?pagesize=5&order=desc&sort=reputation&site=stackoverflow")
+    @GET("users?pagesize=10&order=desc&sort=reputation&site=stackoverflow")
     Call<Items> getTopUsers();
 }

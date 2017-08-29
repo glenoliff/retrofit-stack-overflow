@@ -5,34 +5,72 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/user_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp">
 
-    <TextView
-        android:id="@+id/reputation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <TableRow>
+            <TextView
+                android:text="User:"
+                style="@style/label_text"/>
+            <TextView
+                android:id="@+id/user_name"
+                style="@style/value"/>
+        </TableRow>
 
-    <TextView
-        android:id="@+id/location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/bronze"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <TableRow>
+            <TextView
+                android:text="Reputation:"
+                style="@style/label_text"/>
+            <TextView
+                android:id="@+id/reputation"
+                style="@style/value"/>
+        </TableRow>
 
-    <TextView
-        android:id="@+id/silver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/gold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <TableRow>
+            <TextView
+                android:text="Location:"
+                style="@style/label_text"/>
+            <TextView
+                android:id="@+id/location"
+                style="@style/value"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:text="Bronze:"
+                style="@style/label_text"/>
+            <TextView
+                android:id="@+id/bronze"
+                style="@style/value"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:text="Silver:"
+                style="@style/label_text"/>
+            <TextView
+                android:id="@+id/silver"
+                style="@style/value"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:text="Gold:"
+                style="@style/label_text"/>
+            <TextView
+                android:id="@+id/gold"
+                style="@style/value"/>
+        </TableRow>
+
+    </TableLayout>
 
 </LinearLayout>
